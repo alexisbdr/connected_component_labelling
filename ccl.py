@@ -5,10 +5,10 @@ import itertools
 import math, sys, random
 
 paths = (
-        'images/face.bmp',
-        'images/face_old.bmp',
-        'images/gun.bmp',
-        'images/test.bmp')
+        'face.bmp',
+        'face_old.bmp',
+        'gun.bmp',
+        'test.bmp')
 
 def CCL(img): 
     
@@ -70,7 +70,7 @@ def main():
         cv2.imshow(path , img)
         labels, labeled_img = CCL(img)
         cv2.imshow(path + '/labeled', labeled_img) 
-        cv2.imwrite(path + '/labeled', labeled_img)
+        #cv2.imwrite("images/" + path, labeled_img)
 
     key = cv2.waitKey(0)
     
